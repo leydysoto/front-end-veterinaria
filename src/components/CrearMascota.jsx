@@ -48,8 +48,8 @@ const CrearMascota = () => {
       MascotaService.createMascota(mascota).then((response)=>{
         console.log(response.data);
         navigate('/listaMascota')
-        }).catch(error=>{console.log(error)})
-      }
+      }).catch(error=>{console.log(error)})
+    }
      
   }
   return (
