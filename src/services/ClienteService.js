@@ -3,7 +3,6 @@ import axios from 'axios';
 class ClienteService{
     getAllClientes() {
         return axios.get(CLIENTE_URL)
-
     }
     createCliente(cliente){
         return axios.post(CLIENTE_URL,cliente);

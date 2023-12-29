@@ -40,7 +40,7 @@ const ListaMascota = () => {
               <td>{mascota.fechaNacimiento}</td>
               <td>{mascota.cliente.nombre}</td>
               <td>
-                   <Link className='btn btn-info' to={`/edit-mascota/${mascota.mascotaId}`}>Actualizar</Link>
+                   <Link  to={`/edit-mascota/${mascota.mascotaId}`} className='btn btn-info'>Actualizar</Link>
                 </td>
             </tr>
           ))}

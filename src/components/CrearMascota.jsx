@@ -110,7 +110,7 @@ const CrearMascota = () => {
                 </div>
                 <div className="mb-3">
                   <label htmlFor="cliente" className="form-label">
-                    Dueño:
+                  Dueño:
                   </label>
                   <select
                     className="form-control"
@@ -128,7 +128,7 @@ const CrearMascota = () => {
                 </div>
                 <button className='btn btn-success' onClick={(e)=> guardarOactualizarMascota(e)}>guardar Mascota</button>
                         &nbsp;&nbsp;
-                        <Link to='/' className='btn btn-danger'>cancelar</Link>
+                        <Link to='/listaMascota' className='btn btn-danger'>cancelar</Link>
               </form>
               </div>
           </div>

@@ -15,13 +15,13 @@ const CrearCliente = () => {
     if(id){
       ClienteService.updateCliente(id, cliente).then((response)=>{
         console.log(response.data);
-        navigate('/')
+        navigate('/clientes')
       }).catch(error=>{console.log(error)})
 
     }else{
       ClienteService.createCliente(cliente).then((response)=>{
         console.log(response.data);
-        navigate('/')
+        navigate('/clientes')
   
       }).catch(error=>{console.log(error)})
     }   
@@ -41,9 +41,7 @@ const CrearCliente = () => {
   
 
   const titulo = id ? 'Actualizar cliente' : 'Crear cliente';
-  //para pasar los datos editar- para usar este formulario para editar también;
-  //para mandar a la base de datos la información
-
+  
   return (
     <div>
       <div className='container mt-2'>
@@ -89,7 +87,7 @@ const CrearCliente = () => {
                 </div>
                 <button className='btn btn-success' onClick={(e)=> guardarOactualizarCliente(e)}>guardarCliente</button>
                 &nbsp;&nbsp;
-                <Link to='/' className='btn btn-danger'>cancelar</Link>
+                <Link to='/clientes' className='btn btn-danger'>cancelar</Link>
               </form>
             </div>
           </div>
